@@ -4,9 +4,12 @@ export default function Home() {
   const router = useRouter();
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>🏠 Home</Text>
+      <View style={styles.imagem}>
+        <Text style={styles.imagemTexto}>PL</Text>
+      </View>
+      <Text style={styles.titulo}>Pedro Lisboa</Text>
       <TouchableOpacity style={styles.botao} onPress={() => router.push('/sobre')}>
-        <Text style={styles.botaoTexto}>Ir para Sobre</Text>
+        <Text style={styles.botaoTexto}>Ver meu Perfil</Text>
       </TouchableOpacity>
     </View>
   );
@@ -16,4 +19,6 @@ const styles = StyleSheet.create({
   titulo:    { fontSize: 32, fontWeight: 'bold', marginBottom: 24 },
   botao:     { backgroundColor: '#E83D84', padding: 16, borderRadius: 12 },
   botaoTexto:{ color: '#fff', fontSize: 16, fontWeight: '600' },
+  imagem:     { backgroundColor: '#4544FF', padding: 16, borderRadius: 100, marginBottom: 100 },
+  imagemTexto:    { color: '#fff', fontSize: 44, fontWeight: '600' }
 });

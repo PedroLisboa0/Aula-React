@@ -4,11 +4,16 @@ export default function Sobre() {
   const router = useRouter();
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>ℹ️ Sobre</Text>
+      <Text style={styles.titulo}>CC - 2026</Text>
       <Text style={styles.descricao}>Esse app foi feito na FIAP! 🚀</Text>
       <TouchableOpacity onPress={() => router.back()}>
         <Text style={styles.voltar}>← Voltar</Text>
       </TouchableOpacity>
+    <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 16 }}>
+    <View style={{ flex: 1, height: 100, backgroundColor: '#E83D84', margin: 4, borderRadius: 8 }} />
+    <View style={{ flex: 1, height: 100, backgroundColor: '#E83D84', margin: 4, borderRadius: 8 }} />
+    <View style={{ flex: 1, height: 100, backgroundColor: '#E83D84', margin: 4, borderRadius: 8 }} />
+    </View>
     </View>
   );
 }
